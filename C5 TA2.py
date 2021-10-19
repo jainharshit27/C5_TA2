@@ -18,7 +18,6 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-            sys.exit()
             
         if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
@@ -48,7 +47,6 @@ while True:
     if dino_rect.colliderect(cactus_rect):
         pygame.time.delay(2000)
         pygame.quit()
-        sys.exit()
     
     pygame.display.update()
     
