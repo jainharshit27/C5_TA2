@@ -4,6 +4,9 @@ pygame.init()
 
 screen = pygame.display.set_mode((1200, 400))
 
+# Declare score varaible.
+# Decalre score_font and assign it pygame.font.Font() with "freesansbold.ttf" as font style and 16 as font size.
+
 dino_rect = pygame.Rect(100, 250, 64, 64)
 cactus_rect = pygame.Rect(1100, 300, 32, 32)
 ground_rect = pygame.Rect(0, 330, 1200, 2)
@@ -33,6 +36,10 @@ while True:
     cactus_rect.x = cactus_rect.x - 1
     if cactus_rect.x <= -30:
         cactus_rect.x = 1200
+        
+    # Increment score by 1
+    # Declare score_show and assign the render function ,i.e., score_font.render().
+    # Paste the rendered image assigned to score_show on the screen using screen.blit() at (10, 10) location.
     
     pygame.draw.rect(screen, (100, 100, 100), dino_rect)
     pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
