@@ -37,6 +37,7 @@ while True:
         cactus_rect.x = 1200
         
     # Increment score by 1
+    # Declare show_score and assign round(score/100) to reduce the speed.
     # Declare score_show and assign the render function ,i.e., score_font.render().
     # Paste the rendered image assigned to score_show on the screen using screen.blit() at (10, 10) location.
     
